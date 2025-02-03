@@ -1,0 +1,45 @@
+<html>
+<head>
+<title> login </title>
+</head>
+
+<body style="background-color:#de9cff;"> <center>
+<h3> <i> WELCOME </i> </h3>
+<h4> LOGIN </h4>
+
+<button> username </button>
+<input type="text" id="MESSI"> <br> <hr>
+
+<button> E-mail </button>
+<input type="email"> <br> <hr>
+
+<button> Password </button>
+<input type="password" id="RONALDO"> <br> <hr>
+
+<script>
+
+function mybutton()
+{
+alert(localStorage.getItem("username"));
+alert(localStorage.getItem("password"));
+}
+</script> <br>
+
+<button onclick="mybutton()"> SUBMIT </button>
+
+<script>
+function mybutton() {
+let username=document.getElementById("MESSI").value;
+let password=document.getElementById("RONALDO").value;
+let uname=localStorage.getItem("username");
+let pass=localStorage.getItem("password");
+if (username==uname && password==pass) {alert("you are valid");
+window.location.href="homepage.html";
+}
+else {alert("intruder");
+}}
+</script> <br> <hr>
+
+
+
+
