@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> camleo </title>
+</head>
+
+<body style="background-color:#de9cff;"> <center>
+<h1> <i> CAMLEO </i> </h1>
+<h4> REGISTRATION </h4>
+<button> Name </button>
+<input type="text"> <br> <hr>
+
+<button> E-mail </button>
+<input type="email"> <br> <hr>
+
+<button> mobile number </button>
+<input type="number"> <br> <hr>
+
+<button> username </button>
+<input type="text" id="username"> <br> <hr>
+
+<button> password </button>
+<input type="password" id="password"> <br> <hr>
+
+<button> Date of Birth </button>
+<input type="date"> <br> <hr>
+
+<button> Gender </button>
+<input type="radio" name="gender" value="Male"> Male 
+<input type="radio" name="gender" value="Female"> Female <br> <hr>
+
+<button onclick="savedata()">Submit</button><br>
+
+<script>
+
+function savedata()
+{
+let username=document.getElementById("username").value;
+let password=document.getElementById("password").value;
+localStorage.setItem("username",username);
+localStorage.setItem("password",password);
+alert(localStorage.getItem("username"));
+alert(localStorage.getItem("password"));
+window.location.href="login.html";
+}
+
+</script> <hr> <br>
+
+</center>
+</body>
+</html>
+
+
+
+
+
+
